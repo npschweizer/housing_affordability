@@ -541,6 +541,12 @@ else:
                         }
                     )
 
+                    fig.update_layout(
+                        height=800,
+                        autosize=False,
+                        margin=dict(l=40, r=40, t=60, b=60)
+                    )
+
                     # Now set formatting on the *axes*, not in labels:
                     # Use different formats depending on if it's a percentage column or not
                     x_is_pct = is_percentage_column(x_col)
