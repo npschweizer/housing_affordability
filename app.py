@@ -611,10 +611,13 @@ else:
                             bgcolor='white'
                         ),
                         font_color=MCKINSEY_COLORS['text'],
-                        paper_bgcolor=MCKINSEY_COLORS['light']
+                        paper_bgcolor=MCKINSEY_COLORS['light'],
+                        height=800,
+                        autosize=False,
+                        margin=dict(l=40, r=40, t=60, b=60)
                     )
                 
-                st.plotly_chart(fig, use_container_width=True, height=800)
+                st.plotly_chart(fig, use_container_width=True)
                 
                 # Add variable descriptions below the plot
                 st.markdown("---")
